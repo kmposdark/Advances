@@ -23,6 +23,7 @@ import { FooterComponent } from './common/footer/footer.component';
 import { FlexLayoutModule, FlexModule, GridModule } from '@angular/flex-layout';
 import { LoginRegisterComponent } from './login-register/login-register.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     HeaderNavbarComponent,
     FooterComponent,
     LoginRegisterComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
