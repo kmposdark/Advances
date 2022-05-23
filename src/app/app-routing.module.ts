@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: '', loadChildren: () => import('./store/store.module').then(m => m.StoreModule) },
   { path: 'user', loadChildren: () => import('./user-profile/user-profile.module').then(m => m.UserProfileModule) },
   { path: 'access', loadChildren: () => import('./login-register/login-register.module').then(m => m.LoginRegisterModule) },
+  { path: 'chat', loadChildren: () => import('./chat/chat.module').then(m => m.ChatModule) },
   { path: '**', loadChildren: () => import('./store/store.module').then(m => m.StoreModule) }
 ];
 

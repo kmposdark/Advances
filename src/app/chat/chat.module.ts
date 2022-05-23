@@ -14,13 +14,17 @@ import { MatCardModule } from "@angular/material/card";
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatGridListModule } from "@angular/material/grid-list";
 import { FlexLayoutModule, FlexModule, GridModule } from '@angular/flex-layout';
+import { ChatRoutingModule } from './chat-routing.module';
+import { LiveChatComponent } from './Live-chat/live-chat.component';
  
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    LiveChatComponent
+  ],
   imports: [
-    CommonModule,    
     CommonModule,
+    ChatRoutingModule,
     MatFormFieldModule,
     MatButtonModule,
     MatInputModule,
@@ -38,4 +42,4 @@ import { FlexLayoutModule, FlexModule, GridModule } from '@angular/flex-layout';
     MatGridListModule
   ]
 })
-export class LoginRegisterModule { }
+export class ChatModule { }
