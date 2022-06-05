@@ -9,6 +9,8 @@ export class LiveChatComponent implements OnInit {
   
   constructor() { }
 
+  userPhoto:string = "https://material.angular.io/assets/img/examples/shiba1.jpg";
+
   ngOnInit(): void {
   }
 

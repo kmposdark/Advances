@@ -1,1 +1,47 @@
-<h1>LIVE CHAT IS HERE</h1>
+<div class="container">
+    <div fxLayout="row" fxlayoutAlign="space-evenly stretch" class="live-chat-container">
+        <div fxFlex="30">
+            Contacto
+        </div>
+        <div fxFlex="auto">            
+            <mat-dialog-content class="mat-typography">
+                <div fxLayout="column">
+                    <div fxFlex>
+                        <mat-toolbar fxLayout.gt-sm="row" color="primary" fxShow.gt-sm=true fxShow="false" class="header-live-chat">
+                            <div mat-card-avatar class="chat-header-image" [ngStyle]="{'background-image': 'url('+(userPhoto)+')'}"></div>
+                            <p>User</p>
+                            <span class="header-chat-spacer"></span>
+                            <button mat-icon-button [matMenuTriggerFor]="menu">
+                                <mat-icon>more_vert</mat-icon>
+                              </button>
+                              <mat-menu #menu="matMenu">
+                                <button mat-menu-item>
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                                </button>
+                                <button mat-menu-item disabled>
+                                  <mat-icon>voicemail</mat-icon>
+                                  <span>Check voice mail</span>
+                                </button>
+                                <button mat-menu-item>
+                                  <mat-icon>notifications_off</mat-icon>
+                                  <span>Disable alerts</span>
+                                </button>
+                              </mat-menu>
+                        </mat-toolbar>
+                    </div>
+                    <div fxFlex>
+                        <mat-card class="card">
+                            <mat-card-content>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, labore deserunt blanditiis quas vitae numquam. Eos consequuntur magnam aliquam, exercitationem quae tenetur tempore sint, quam mollitia cumque iusto facere praesentium?
+                                <mat-form-field appearance="standard" class="chat-input">
+                                    <input type="text" matInput name="chatText" id="chatText" placeholder="..." autocomplete="off">
+                                </mat-form-field>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                </div>                
+            </mat-dialog-content>
+        </div>
+    </div>
+</div>

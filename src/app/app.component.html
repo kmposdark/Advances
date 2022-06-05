@@ -2,7 +2,7 @@
 <router-outlet></router-outlet>
 <section *ngIf="buttonChat_view">
     <div class="button-chat">
-        <button mat-fab color="accent" (click)="chatIcon()">
+        <button mat-fab color="accent" [routerLink]="liveChat" (click)="chatIcon()">
             <mat-icon>chat</mat-icon>
         </button>
     </div>

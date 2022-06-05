@@ -1,0 +1,35 @@
+.container{
+    background-color: #f5f5f5;
+    min-height: calc(100% - 250px);
+}
+
+.chat > mat-card{
+    display: inline-grid;
+    display: -moz-inline-grid;
+    display: -webkit-inline-grid;
+}
+
+.live-chat-container{
+    border-radius: 5px;
+    box-shadow: none;
+    background-color: white;
+    max-width: 1145px;
+    margin: auto;
+    min-height: 100%;
+}
+
+.header-live-chat{
+    border-radius: 0px 5px 0px 0px;
+}
+
+.chat-header-image {    
+    background-size: cover;
+}
+
+.header-chat-spacer {
+    flex: 1 1 auto;
+  }
+
+.mat-dialog-content.mat-typography{
+    height: 100%;
+}

@@ -10,6 +10,7 @@ import { DOCUMENT } from '@angular/common';
 export class AppComponent {
   title:string = 'Advances';
   buttonChat_view:boolean = true;
+  liveChat:string = "/chat/live-chat";
 
   constructor(@Inject(DOCUMENT) document:any){    
     if( document.location.pathname == '/chat/' ){
