@@ -15,7 +15,8 @@
     background-color: white;
     max-width: 1145px;
     margin: auto;
-    min-height: 100%;
+    min-height: 100%;    
+    box-shadow: 0px 2px 10px black;
 }
 
 .header-live-chat{
@@ -32,4 +33,52 @@
 
 .mat-dialog-content.mat-typography{
     height: 100%;
+}
+
+.text-style{
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto;
+}
+
+.input-section{
+    bottom: 0px;
+}
+
+.user-toolbar{
+    background-color: #4e4e4e;
+    border-radius: 5px 0px 0px 0px;
+}
+
+.chat-incomming{
+    text-align: left;
+    text-align: -webkit-left;
+    padding: 1% 2%;
+}
+
+.chat-send{
+    text-align: right;
+    text-align: -webkit-right;
+    padding: 1% 2%;
+}
+
+.chat-incomming .text{
+    padding: 10px;
+    text-align: start;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: white;
+    width: 60%;
+}
+
+.chat-send .text{
+    padding: 10px;
+    text-align: end;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: white;
+    width: 60%;
 }

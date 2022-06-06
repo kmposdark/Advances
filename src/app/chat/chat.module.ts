@@ -16,6 +16,7 @@ import { MatGridListModule } from "@angular/material/grid-list";
 import { FlexLayoutModule, FlexModule, GridModule } from '@angular/flex-layout';
 import { ChatRoutingModule } from './chat-routing.module';
 import { LiveChatComponent } from './Live-chat/live-chat.component';
+import {MatListModule} from '@angular/material/list';
  
 
 @NgModule({
@@ -39,7 +40,8 @@ import { LiveChatComponent } from './Live-chat/live-chat.component';
     FlexModule,
     GridModule,
     MatCheckboxModule,
-    MatGridListModule
+    MatGridListModule,    
+    MatListModule
   ]
 })
 export class ChatModule { }

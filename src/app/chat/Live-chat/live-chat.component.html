@@ -1,17 +1,37 @@
 <div class="container">
     <div fxLayout="row" fxlayoutAlign="space-evenly stretch" class="live-chat-container">
         <div fxFlex="30">
-            Contacto
+            <div fxLayout="column">
+                <mat-dialog-content class="mat-typography">
+                    <mat-toolbar fxLayout.gt-sm="row" class="header-live-chat user-toolbar" [ngStyle]="{'background-color':'#4e4e4e'}">
+                        <div mat-card-avatar class="chat-header-image" [ngStyle]="{'background-image': 'url('+(userPhoto2)+')'}"></div>
+                        <span class="header-chat-spacer"></span>
+                        <button mat-button>
+                            <mat-icon class="mr icon-white">settings</mat-icon>
+                        </button>                        
+                    </mat-toolbar>
+                    <div class="container-row">
+                        <mat-list>
+                            <mat-list-item> User 1 </mat-list-item>
+                            <mat-divider></mat-divider>
+                            <mat-list-item> User 2 </mat-list-item>
+                            <mat-divider></mat-divider>
+                            <mat-list-item> User 3 </mat-list-item>
+                            <mat-divider></mat-divider>
+                        </mat-list>
+                    </div>
+                </mat-dialog-content>
+            </div>
         </div>
         <div fxFlex="auto">            
             <mat-dialog-content class="mat-typography">
-                <div fxLayout="column">
+                <div fxLayout="column" [ngStyle]="{'border-left':'1px solid ligthgray'}">
                     <div fxFlex>
                         <mat-toolbar fxLayout.gt-sm="row" color="primary" fxShow.gt-sm=true fxShow="false" class="header-live-chat">
                             <div mat-card-avatar class="chat-header-image" [ngStyle]="{'background-image': 'url('+(userPhoto)+')'}"></div>
-                            <p>User</p>
+                            <p class="text-style">User</p>
                             <span class="header-chat-spacer"></span>
-                            <button mat-icon-button [matMenuTriggerFor]="menu">
+                            <button mat-icon-button [matMenuTriggerFor]="menu" direction="left">
                                 <mat-icon>more_vert</mat-icon>
                               </button>
                               <mat-menu #menu="matMenu">
@@ -31,13 +51,35 @@
                         </mat-toolbar>
                     </div>
                     <div fxFlex>
-                        <mat-card class="card">
+                        <mat-card class="card" [ngStyle]="{'background-color':'gainsboro'}">
                             <mat-card-content>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, labore deserunt blanditiis quas vitae numquam. Eos consequuntur magnam aliquam, exercitationem quae tenetur tempore sint, quam mollitia cumque iusto facere praesentium?
-                                <mat-form-field appearance="standard" class="chat-input">
-                                    <input type="text" matInput name="chatText" id="chatText" placeholder="..." autocomplete="off">
-                                </mat-form-field>
+                                <div [ngStyle]="{'min-height':'350px'}" id="messages">
+                                    <div class="chat-incomming">
+                                        <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, labore deserunt blanditiis quas vitae numquam. Eos consequuntur magnam aliquam, exercitationem quae tenetur tempore sint, quam mollitia cumque iusto facere praesentium?</div>
+                                    </div>
+                                    <div class="chat-send">
+                                        <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, labore deserunt blanditiis quas vitae numquam.</div>
+                                    </div>
+                                </div>                                
                             </mat-card-content>
+                            <mat-card-footer>
+                                <mat-toolbar color="primary">
+                                    <button mat-button>
+                                        <mat-icon>videocam</mat-icon>
+                                    </button>
+                                    <button mat-button>
+                                        <mat-icon>attach_file</mat-icon>
+                                    </button>
+                                    <mat-form-field appearance="standard" class="chat-input" [ngStyle]="{'width':'100%'}">
+                                        <div class="header-chat-spacer">
+                                            <input type="text" matInput name="chatText" id="chatText" autocomplete="off">
+                                        </div>
+                                    </mat-form-field>
+                                    <button mat-button>
+                                        <mat-icon>send</mat-icon>
+                                    </button>
+                                </mat-toolbar>
+                            </mat-card-footer>
                         </mat-card>
                     </div>
                 </div>                

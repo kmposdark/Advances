@@ -36,7 +36,7 @@ export class HeaderNavbarComponent implements OnInit {
       this.button = this.listDeliciousDishes.slice(0,6);
     }
   }
-
+  
   menuItems = [    
     {
       label: 'About',
@@ -55,6 +55,15 @@ export class HeaderNavbarComponent implements OnInit {
       showOnDesktop: true,
       href: '/access/login',
       redirect: true
+    },
+    {
+      label: 'Refer',
+      icon: 'supervisor_account',
+      showOnMobile: false,
+      showOnTablet: false,
+      showOnDesktop: false,
+      href: '',
+      redirect: false
     },
     {
       label: 'Showcase',

@@ -14,8 +14,7 @@
             <img src="../../../assets/images/logo_blanco.png" class="logo">
         </a>
     </span>
-    <div fxFlex="30" fxLayoutAlign="star center">
-        <button mat-button matTooltip="Referidos"><mat-icon class="mr">supervisor_account</mat-icon></button>        
+    <div fxFlex="30" fxLayoutAlign="star center">        
         <button mat-button matTooltip="Cartera">0.00 Pts.</button>
     </div>
     <div fxFlex="20" style="text-align: center;">
@@ -29,10 +28,6 @@
         <button mat-button [matMenuTriggerFor]="menu">
             <mat-icon class="mr">filter_list</mat-icon>
         </button>
-        <button mat-button [matMenuTriggerFor]="language">
-            <mat-icon class="mr">translate</mat-icon>Español
-        </button>
-        
     </div>
     <div fxFlex="40" style="text-align: end;">
         <button mat-button *ngFor="let item of menuItems" 

@@ -13,7 +13,7 @@ export class AppComponent {
   liveChat:string = "/chat/live-chat";
 
   constructor(@Inject(DOCUMENT) document:any){    
-    if( document.location.pathname == '/chat/' ){
+    if( document.location.pathname == '/chat/live-chat' ){
       this.buttonChat_view = false;
     }
   }  
